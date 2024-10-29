@@ -24,6 +24,11 @@ const router = createRouter({
       component: JobView,
     },
     {
+      path: "/jobs/edit/:id",
+      name: "job",
+      component: JobView,
+    },
+    {
       path: "/:catchAll(.*)",
       name: "not-found",
       component: NotFoundView,
